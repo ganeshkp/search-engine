@@ -6,6 +6,6 @@ langchain_huggingface
 faiss-cpu
 duckdb
 langchain-groq
-duckduckgo_search
 requests 
 pydantic
+duckduckgo-search
