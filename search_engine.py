@@ -9,6 +9,12 @@ from langchain_community.tools import (
 from langchain.agents import initialize_agent, AgentType
 from langchain.callbacks import StreamlitCallbackHandler
 
+try:
+    from duckduckgo_search import DDGS
+except ImportError:
+    subprocess.run(["pip", "install", "-U", "duckduckgo-search"], check=True)
+    from duckduckgo_search import DDGS  # Retry import after installation
+
 
 ## Arxiv and wikipedia Tools
 arxiv_wrapper = ArxivAPIWrapper(top_k_results=1, doc_content_chars_max=200)
