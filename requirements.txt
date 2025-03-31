@@ -6,4 +6,4 @@ langchain_huggingface
 faiss-cpu
 duckdb
 langchain-groq
-duckduckgo-search
+duckduckgo_search
